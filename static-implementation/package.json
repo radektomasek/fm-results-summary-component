@@ -1,0 +1,25 @@
+{
+  "name": "@fm-result-summary-component/static-implementation",
+  "version": "1.0.0",
+  "description": "This is a solution of one the Frontend Mentor challenges - https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV, built with Vanilla CSS",
+  "source": "index.html",
+  "scripts": {
+      "start": "parcel",
+      "build": "parcel build"
+  },
+  "keywords": [
+      "Parcel",
+      "HTML",
+      "CSS"
+  ],
+  "author": "Radek Tomasek (radek.tomasek@gmail.com)",
+  "license": "ISC",
+  "devDependencies": {
+      "parcel": "^2.9.2"
+  },
+  "@parcel/transformer-css": {
+      "drafts": {
+          "nesting": true
+      }
+  }
+}
