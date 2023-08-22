@@ -16,29 +16,71 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <!-- To be implemented
-    Your Result
-    76
-    of 100
-  
-    Great
-    You scored higher than 65% of the people who have taken these tests.
-    
-    Summary
-  
-    Reaction
-    80 / 100
-  
-    Memory
-    92 / 100
-  
-    Verbal
-    61 / 100
-  
-    Visual
-    72 / 100
-  
-    Continue
-    -->
+    <section class="highlight">
+      <h1 class="highlight__heading">Your Result</h1>
+
+      <div class="highlight__score">
+        <h2>76</h2>
+        <p>of 100</p>
+      </div>
+
+      <h3 class="highlight__subheading">Great</h3>
+
+      <p class="highlight__description">
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </section>
+
+    <section class="breakdown">
+      <h4 class="breakdown__title">Summary</h4>
+
+      <!-- Reaction card -->
+      <div class="breakdown__card card card--reaction">
+        <div class="card__description">
+          <h5>Reaction</h5>
+          <img src="./assets/icon-reaction.svg" alt="" />
+        </div>
+        <div class="card__score">
+          <p><strong>80</strong> / 100</p>
+        </div>
+      </div>
+
+      <!-- Memory card -->
+      <div class="breakdown__card card card--memory">
+        <div class="card__description">
+          <h5>Memory</h5>
+          <img src="./assets/icon-memory.svg" alt="" />
+        </div>
+        <div class="card__score">
+          <p><strong>92</strong> / 100</p>
+        </div>
+      </div>
+
+      <!-- Verbal card -->
+      <div class="breakdown__card card card--verbal">
+        <div class="card__description">
+          <h5>Verbal</h5>
+          <img src="./assets/icon-verbal.svg" alt="" />
+        </div>
+
+        <div class="card__score">
+          <p><strong>61</strong> / 100</p>
+        </div>
+      </div>
+
+      <!-- Visual card -->
+      <div class="visual__card card card--visual">
+        <div class="card__description">
+          <h5>Visual</h5>
+          <img src="./assets/icon-verbal.svg" alt="" />
+        </div>
+
+        <div class="card__score">
+          <p><strong>72</strong> / 100</p>
+        </div>
+      </div>
+
+      <button>Continue</button>
+    </section>
   </body>
 </html>
