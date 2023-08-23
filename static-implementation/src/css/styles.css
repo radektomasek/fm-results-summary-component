@@ -33,21 +33,7 @@
     --persian-blue-gradient: hsla(241, 72%, 46%, 0);
 }
 
-
-
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 body {
-    margin: 0;
-    padding: 0;
     font-family: sans-serif;
     background: var(--pale-blue-color);
 }
