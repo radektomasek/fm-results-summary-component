@@ -26,81 +26,71 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <section class="highlight">
-      <h1 class="highlight__heading">Your Result</h1>
+    <main class="container">
+      <section class="highlight">
+        <h2 class="highlight__heading">Your Result</h2>
 
-      <div class="highlight__score">
-        <h2>76</h2>
-        <p>of 100</p>
-      </div>
-
-      <h3 class="highlight__subheading">Great</h3>
-
-      <p class="highlight__description">
-        You scored higher than 65% of the people who have taken these tests.
-      </p>
-    </section>
-
-    <section class="breakdown">
-      <h4 class="breakdown__title">Summary</h4>
-
-      <!-- Reaction card -->
-      <div
-        class="[ scorecard ] [ flex-flow align-items-center ]"
-        data-variant="reaction"
-      >
-        <h5>Reaction</h5>
-
-        <div class="order-start">
-          <img src="./assets/icon-reaction.svg" alt="" />
+        <div class="highlight__score">
+          <p><strong>76</strong></p>
+          <p>of 100</p>
         </div>
 
-        <p class="push-right"><strong>80</strong> / 100</p>
-      </div>
+        <h3 class="highlight__subheading">Great</h3>
 
-      <!-- Memory card -->
-      <div
-        class="[ scorecard ] [ flex-flow align-items-center ]"
-        data-variant="memory"
-      >
-        <h5>Memory</h5>
+        <p class="highlight__description">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
 
-        <div class="order-start">
-          <img src="./assets/icon-memory.svg" alt="" />
+      <section class="breakdown">
+        <h2 class="breakdown__title">Summary</h2>
+
+        <!-- Reaction card -->
+        <div class="scorecard scorecard--reaction">
+          <h4 class="scorecard__heading">Reaction</h4>
+
+          <div class="scorecard__icon">
+            <img src="./assets/icon-reaction.svg" alt="" />
+          </div>
+
+          <p class="scorecard__score push-right"><strong>80</strong> / 100</p>
         </div>
 
-        <p class="push-right"><strong>92</strong> / 100</p>
-      </div>
+        <!-- Memory card -->
+        <div class="scorecard scorecard--memory">
+          <h4 class="scorecard__heading">Memory</h4>
 
-      <!-- Verbal card -->
-      <div
-        class="[ scorecard ] [ flex-flow align-items-center ]"
-        data-variant="verbal"
-      >
-        <h5>Verbal</h5>
+          <div class="scorecard__icon">
+            <img src="./assets/icon-memory.svg" alt="" />
+          </div>
 
-        <div class="order-start">
-          <img src="./assets/icon-verbal.svg" alt="" />
+          <p class="scorecard__score push-right"><strong>92</strong> / 100</p>
         </div>
 
-        <p class="push-right"><strong>61</strong> / 100</p>
-      </div>
+        <!-- Verbal card -->
+        <div class="scorecard scorecard--verbal">
+          <h4 class="scorecard__heading">Verbal</h4>
 
-      <!-- Visual card -->
-      <div
-        class="[ scorecard ] [ flex-flow align-items-center ]"
-        data-variant="visual"
-      >
-        <h5>Visual</h5>
+          <div class="scorecard__icon">
+            <img src="./assets/icon-verbal.svg" alt="" />
+          </div>
 
-        <div class="order-start">
-          <img src="./assets/icon-visual.svg" alt="" />
+          <p class="scorecard__score push-right"><strong>61</strong> / 100</p>
         </div>
 
-        <p class="push-right"><strong>72</strong> / 100</p>
-      </div>
+        <!-- Visual card -->
+        <div class="scorecard scorecard--visual">
+          <h4 class="scorecard__heading">Visual</h4>
 
-      <button class="button">Continue</button>
-    </section>
+          <div class="scorecard__icon">
+            <img src="./assets/icon-visual.svg" alt="" />
+          </div>
+
+          <p class="scorecard__score push-right"><strong>72</strong> / 100</p>
+        </div>
+
+        <button class="breakdown__button">Continue</button>
+      </section>
+    </main>
   </body>
 </html>
