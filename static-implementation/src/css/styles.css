@@ -45,6 +45,16 @@
 body {
     font-family: 'Hanken Grotesk', sans-serif;
     background: var(--pale-blue-color);
+
+    @media (min-width: 90em) {
+        & {
+            display: inline-flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
 h2 {
@@ -82,6 +92,16 @@ button {
     width: 23.4375rem;
     height: 50.5625rem;
     margin: 0 auto;
+
+    @media (min-width: 90em) {
+        & {
+            width: 46rem;
+            height: 32rem;
+            grid-template-columns: 23rem 23rem;
+            grid-template-rows: 1fr;
+            border-radius: 2rem;
+        }
+    }
 }
 
 .highlight {
@@ -131,6 +151,14 @@ button {
 
     & .highlight__description {
         color: var(--light-lavender-color);
+    }
+
+    @media (min-width: 90em) {
+        & {
+
+            border-radius: 2rem;
+            
+        }
     }
 }
 
