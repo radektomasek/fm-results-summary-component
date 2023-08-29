@@ -27,6 +27,7 @@
     --font-size-18px: calc(18rem / 16);
     --font-size-24px: calc(24rem / 16);
     --font-size-56px: calc(56rem / 16);
+    --font-size-72px: calc(72rem / 16);
 
     /* line heights */
     --line-height-72px: 128.571%;
@@ -60,6 +61,12 @@ body {
 h2 {
     font-size: var(--font-size-18px);
     font-weight: 700;
+
+    @media (min-width: 90em) {
+        & {
+            font-size: var(--font-size-24px);
+        }
+    }
 }
 
 h3 {
@@ -125,10 +132,24 @@ button {
         justify-content: center;
         background:  linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0.00) 100%);
 
-        width: var(--score-box-size);
-        height: var(--score-box-size);
         margin: 0 auto;
         border-radius: 50%;
+        width: var(--score-box-size);
+        height: var(--score-box-size);
+
+        @media (min-width: 90em) {
+            --score-box-size: calc(200rem / 16);
+
+            & > :first-child {
+                font-size: var(--font-size-72px);
+            }
+
+            & > :last-child {
+                font-size: var(--font-size-18px);
+            } 
+
+
+        }
     }
     
     & .highlight__heading {
